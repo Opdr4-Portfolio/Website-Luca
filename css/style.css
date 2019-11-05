@@ -99,7 +99,7 @@ a.active, .nav a:hover{
 	right: 0;
 	top: 10px;
 	color: white;
-	font-family: century gothic;
+	font-family: varela;
 	padding: 0 60px;
 	display: none;
 }
@@ -141,7 +141,7 @@ a.active, .nav a:hover{
 	padding: 0 10px;
 	float: left;
 }
-/**/
+/*'Verzend' knop*/
 .submitbutton{
 	width: 160px;
 	height: 65px;
