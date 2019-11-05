@@ -1,0 +1,190 @@
+
+/*?*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*html*/
+html, body{
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-weight: normal;
+}
+/*Background image*/
+.background{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	overflow-y: auto;
+}
+/*Tabs box*/
+.nav{
+	width: 350px;
+	height: auto;
+	position: absolute;
+	top: 20%;
+	left: 0;
+}
+/*Tabs no-hover background, etc.*/
+.nav a{
+	text-decoration: none;
+	font-size: 28px;
+	font-family: verdana;
+	font-weight: bold;
+	height: 90px;
+	margin: 5px 0;
+	display: inline-block;
+	background-color: black;
+	color: white;
+	line-height: 90px;
+	text-align: center;
+	transition: 300ms;
+}
+/*Tabs hovers, colors, widths, etc.*/
+a.active, .nav a:hover{
+	background-color: white;
+	color: black;
+	width: 100%;
+}
+.a{
+	width: 95%;
+}
+.b{
+	width: 85%;
+}
+.c{
+	width: 80%;
+}
+.d{
+	width: 75%;
+}
+/**/
+.content{
+	position: absolute;
+	width: 930px;
+	min-height: 500px;
+	height: auto;
+	/*background-color: red;*/
+	right: 0;
+	top: 10%;
+}
+/*Home text font etc.*/
+.home{
+	position: absolute;
+	right: 0;
+	bottom: -50px;
+	color: white;
+	font-family: verdana;
+}
+/*Home naam text*/
+.home h1{
+	font-size: 95px;
+	padding-right: 90px;
+	border-bottom: 1px solid white;
+	text-transform: uppercase;
+}
+/*Home klas text*/
+.home h3{
+	font-size: 28px;
+	padding: 5px 0;
+	opacity: 0.6;
+}
+/*About us hello text*/
+.aboutus{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	font-family: century gothic;
+	padding: 0 60px;
+	display: none;
+}
+/*About us hobby's, etc. text*/
+.aboutus p{
+	font-size: 40px;
+	line-height: 40px;
+	margin-bottom: 15px;
+}
+/*Contact us boxes, layout, etc.*/
+.contactus{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	padding: 0 60px;
+	display: none;
+}
+/*Contact us texts*/
+.inputtext{
+	width: 55%;
+	height: 65px;
+	border: 3px solid black;
+	color: lightgrey;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 0 10px;
+	float: left;
+	margin-bottom: 15px;
+}
+/**/
+.inputmessage{
+	width: 55%;
+	height: 135px;
+	border: 3px solid black;
+	color: lightgrey;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 0 10px;
+	float: left;
+}
+/**/
+.submitbutton{
+	width: 160px;
+	height: 65px;
+	font-family: arial;
+	background-color: white;
+	color: black;
+	font-size: 28px;
+	border: none;
+	font-weight: bold;
+	float: left;
+	clear: both;
+	margin-top: 25px;
+}
+/**/
+.gallery{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	padding: 0 60px;
+	display: none;
+}
+/**/
+.gallery .image{
+	width: 31%;
+	margin: 1%;
+	float: left;
+}
+/**/
+.image img{
+	width: 90%;
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+/**/
+.image img:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
+/**/
+.image video{
+	width: 100%;
+	height: auto;
+}

@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio Luca Kessing</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="background">
+<div class="nav">
+	<a class="a active" href="#">Home</a>
+	<a class="b" href="#">Over mij</a>
+	<a class="c" href="#">Gallerij</a>
+	<a class="d" href="#">Contact</a>
+</div>
+<div class="content">
+	<div class="home">
+		<h1>Luca Kessing</h1>
+		<h3>I.A.145</h3>
+	</div>
+
+	<div class="aboutus">
+		<p><b>Hello,</b><br>
+			<p><b>Ik ga Jullie Vertellen over mijn interesses hobby's etc.</b><br>
+	
+	</div>
+
+	<div class="gallery">
+		<div class="image">
+			<img src="images/1.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/2.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/3.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/4.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/5.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/6.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/7.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/8.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/9.jpg" />
+		</div>
+	</div>
+
+	
+
+	<div class="contactus">
+		<div class="contactform">
+			<form action="index.html" method="post">
+				<input type="text" name="" class="inputtext" value="Voornaam">
+				<input type="text" name="" class="inputtext" value="Achternaam">
+				<input type="text" name="" class="inputtext" value="E-mail">
+				<textarea cols="4" rows="6" class="inputmessage">Your Messages...!!!</textarea>
+				<input type="button" name="" class="submitbutton" value="Submit">
+			</form>
+		</div>
+	</div>
+</div>
+	
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('a').click(function(){
+		//alert("i am click");
+		var selected = $(this);
+		$('a').removeClass('active');
+		$(selected).addClass('active');
+	});
+	var $a = $('.a'),
+	$b = $('.b'),
+	$c = $('.c'),
+	$d = $('.d'),
+	$home = $('.home'),
+	$aboutus = $('.aboutus'),
+	$gallery = $('.gallery'),
+	$contactus = $('.contactus');
+
+	$a.click(function(){
+		$home.fadeIn();
+		$aboutus.fadeOut();
+		$gallery.fadeOut();
+		$contactus.fadeOut();
+	});
+	$b.click(function(){
+		$aboutus.fadeIn();
+		$home.fadeOut();
+		$gallery.fadeOut();
+		$contactus.fadeOut();
+	});
+	$c.click(function(){
+		$gallery.fadeIn();
+		$home.fadeOut();
+		$aboutus.fadeOut();
+		$contactus.fadeOut();
+	});
+	$d.click(function(){
+		$contactus.fadeIn();
+		$home.fadeOut();
+		$gallery.fadeOut();
+		$aboutus.fadeOut();
+	});
+});
+</script>
+</body>
+</html>
